@@ -19,6 +19,8 @@ class BrandCompaniesRestApiDependencyProvider extends AbstractBundleDependencyPr
     {
         $container = parent::provideBusinessLayerDependencies($container);
 
+        $container = $this->addBrandFacade($container);
+
         return $container;
     }
 

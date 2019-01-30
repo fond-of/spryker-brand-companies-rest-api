@@ -21,12 +21,13 @@ class BrandsCompanyMapperPlugin extends AbstractPlugin implements CompanyMapperP
      * @param \Generated\Shared\Transfer\RestCompaniesRequestAttributesTransfer $restCompaniesRequestAttributesTransfer
      * @param \Generated\Shared\Transfer\CompanyTransfer $companyTransfer
      *
-     * @return void
+     * @return \Generated\Shared\Transfer\CompanyTransfer
      */
     public function map(
         RestCompaniesRequestAttributesTransfer $restCompaniesRequestAttributesTransfer,
         CompanyTransfer $companyTransfer
     ): CompanyTransfer {
-        // TODO: Implement map() method.
+        return $this->getFacade()
+            ->mapBrandToCompanyBusinessUnit($restCompaniesRequestAttributesTransfer, $companyTransfer);
     }
 }

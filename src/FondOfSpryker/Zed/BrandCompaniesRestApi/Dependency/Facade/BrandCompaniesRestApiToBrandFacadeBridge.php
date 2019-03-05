@@ -27,6 +27,6 @@ class BrandCompaniesRestApiToBrandFacadeBridge implements BrandCompaniesRestApiT
      */
     public function findByName(string $name): ?BrandTransfer
     {
-        $this->brandFacade->findByName($name);
+        return $this->brandFacade->findByName($name);
     }
 }

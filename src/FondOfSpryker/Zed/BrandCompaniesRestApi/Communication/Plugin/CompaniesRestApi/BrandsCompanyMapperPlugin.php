@@ -8,7 +8,7 @@ use Generated\Shared\Transfer\RestCompaniesRequestAttributesTransfer;
 use Spryker\Zed\Kernel\Communication\AbstractPlugin;
 
 /**
- * @method \FondOfSpryker\Zed\BrandCompanyBusinessUnitsRestApi\Business\BrandCompanyBusinessUnitsRestApiFacadeInterface getFacade()
+ * @method \FondOfSpryker\Zed\BrandCompaniesRestApi\Business\BrandCompaniesRestApiFacadeInterface getFacade()
  */
 class BrandsCompanyMapperPlugin extends AbstractPlugin implements CompanyMapperPluginInterface
 {

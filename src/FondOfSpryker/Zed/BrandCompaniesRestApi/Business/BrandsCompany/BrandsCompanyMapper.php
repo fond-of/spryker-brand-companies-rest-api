@@ -65,12 +65,12 @@ class BrandsCompanyMapper implements BrandsCompanyMapperInterface
     }
 
     /**
-     * @param int $idCompany
+     * @param int|null $idCompany
      * @param array $idBrands
      *
      * @return \Generated\Shared\Transfer\CompanyBrandRelationTransfer
      */
-    protected function createCompanyBrandRelationTransfer(int $idCompany, array $idBrands): CompanyBrandRelationTransfer
+    protected function createCompanyBrandRelationTransfer(?int $idCompany, array $idBrands): CompanyBrandRelationTransfer
     {
         $companyBrandRelationTransfer = new CompanyBrandRelationTransfer();
 

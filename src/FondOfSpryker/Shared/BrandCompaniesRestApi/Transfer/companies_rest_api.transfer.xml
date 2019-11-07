@@ -10,4 +10,14 @@
     <transfer name="RestBrand">
         <property name="name" type="string" />
     </transfer>
+
+    <transfer name="CompanyBrandRelation">
+        <property name="idCompany" type="int" />
+        <property name="idBrands" type="int[]" />
+        <property name="brands" type="Brand[]" singular="brand"/>
+    </transfer>
+
+    <transfer name="Company">
+        <property name="brandRelation" type="CompanyBrandRelation"/>
+    </transfer>
 </transfers>

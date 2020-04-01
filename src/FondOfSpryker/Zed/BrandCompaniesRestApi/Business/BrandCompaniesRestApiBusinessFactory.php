@@ -21,8 +21,6 @@ class BrandCompaniesRestApiBusinessFactory extends AbstractBusinessFactory
     }
 
     /**
-     * @throws
-     *
      * @return \FondOfSpryker\Zed\BrandCompaniesRestApi\Dependency\Facade\BrandCompaniesRestApiToBrandFacadeInterface
      */
     protected function getBrandFacade(): BrandCompaniesRestApiToBrandFacadeInterface

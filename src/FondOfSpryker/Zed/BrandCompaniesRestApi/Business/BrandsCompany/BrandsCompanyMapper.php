@@ -33,15 +33,15 @@ class BrandsCompanyMapper implements BrandsCompanyMapperInterface
         RestCompaniesRequestAttributesTransfer $restCompaniesRequestAttributesTransfer,
         CompanyTransfer $companyTransfer
     ): CompanyTransfer {
-        $restBrandsTransfer = $restCompaniesRequestAttributesTransfer->getBrands();
+        $restBrandTransfers = $restCompaniesRequestAttributesTransfer->getBrands();
 
-        if ($restBrandsTransfer === null || count($restBrandsTransfer) === 0) {
+        if (count($restBrandTransfers) === 0) {
             return $companyTransfer;
         }
 
         $idBrands = [];
 
-        foreach ($restBrandsTransfer as $restBrandTransfer) {
+        foreach ($restBrandTransfers as $restBrandTransfer) {
             $name = $restBrandTransfer->getName();
 
             if ($name === null) {
